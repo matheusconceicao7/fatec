@@ -17,6 +17,9 @@
     Para a realização deste exercício o aluno deverá OBRIGATORIAMENTE:
     1) Todas as entradas de dados devem ser tratadas e caso a informação digitada pelo usuário não seja válida
     para realizar a operação, informar o usuário com mensagem de erro.
+     
+    Autor: Lucas Costa
+    Autor: Matheus da Costa Conceição
     **/
 
     #include <stdio.h>
