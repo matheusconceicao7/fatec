@@ -17,7 +17,7 @@
     Para a realização deste exercício o aluno deverá OBRIGATORIAMENTE:
     1) Todas as entradas de dados devem ser tratadas e caso a informação digitada pelo usuário não seja válida
     para realizar a operação, informar o usuário com mensagem de erro.
-     
+
     Autor: Lucas Costa
     Autor: Matheus da Costa Conceição
     **/
@@ -147,11 +147,13 @@
     }
 
     int main() {
-        int opcao, linhasA, colunasA, linhasB, colunasB, linhasResultado, colunasResultado, diferente, i, j, k;
+        int linhasA, colunasA, linhasB, colunasB, linhasResultado, colunasResultado, diferente, i, j, k;
+        char opcao;
         int matrizA[LINHA][COLUNA], matrizB[LINHA][COLUNA], matrizResultado[LINHA][COLUNA];
         //Menu de escolha de operacoes
         do {
-            opcao = 0, diferente = 0;
+            diferente = 0;
+
             system("cls");
             printf("-----------------------------------------------\n");
             printf("1. Igualdade entre matrizes (A = B)\n");
@@ -161,11 +163,12 @@
             printf("5. Sair\n");
             printf("-----------------------------------------------\n");
             printf("Digite a opcao: ");
-            scanf("%i", &opcao);
+            fflush(stdin);
+            scanf("%c", &opcao);
             system("cls");
 
             switch(opcao) {
-                case(1): {
+                case('1'): {
                     if(pedeOrdem(&linhasA, &colunasA, &linhasB, &colunasB) == 1)
                         break;
                     if(entraMatrizes(&linhasA, &colunasA, &linhasB, &colunasB, &matrizA, &matrizB) == 1)
@@ -190,7 +193,7 @@
                     }
                     break;
                 }
-                case(2): {
+                case('2'): {
                     if(pedeOrdem(&linhasA, &colunasA, &linhasB, &colunasB) == 1)
                         break;
                     if(entraMatrizes(&linhasA, &colunasA, &linhasB, &colunasB, &matrizA, &matrizB) == 1)
@@ -209,7 +212,7 @@
                     }
                     break;
                 }
-                case(3): {
+                case('3'): {
                     if(pedeOrdem(&linhasA, &colunasA, &linhasB, &colunasB) == 1)
                         break;
                     if(entraMatrizes(&linhasA, &colunasA, &linhasB, &colunasB, &matrizA, &matrizB) == 1)
@@ -228,7 +231,7 @@
                     }
                     break;
                 }
-                case(4): {
+                case('4'): {
                     if(pedeOrdem(&linhasA, &colunasA, &linhasB, &colunasB) == 1)
                         break;
                     if(entraMatrizesMultiplicacao(&linhasA, &colunasA, &linhasB, &colunasB, &matrizA, &matrizB) == 1)
@@ -252,7 +255,7 @@
                     }
                     break;
                 }
-                case(5): {
+                case('5'): {
                     printf("Saindo do programa!");
                     exit(0);
                 }
