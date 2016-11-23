@@ -1,0 +1,5 @@
+- Alterar a distribuição no switchs. Colocar pontos estratégicos para caso um switch caia. (done)
+- Analisar a estrutura física no packet tracer para que uma possível identificação de nível de sinal (done)
+- Configurar link redundante de forma a utilizar os dois ao mesmo tempo 80/20%
+
+- Gerar dados para brainstorm (retardos de acesso, transmissão, transferencia)
