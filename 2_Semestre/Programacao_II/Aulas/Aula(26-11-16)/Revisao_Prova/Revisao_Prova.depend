@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1480162288 source:f:\2_semestre\programacao_ii\aulas\aula(26-11-16)\revisao_prova\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
